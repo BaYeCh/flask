@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <body>
+        {% if test %}
+            <ul>
+            {% for song in song_lst %}
+                <li><a href = ''>{{song[0]}} : {{ song[1] }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>게시글이 없습니다.</p>
+        {% endif %}
+    </body>
+</html>
